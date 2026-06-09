@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oversized T-Shirt Brand Guide | ₹30,000 Budget | Ahmedabad</title>
+<style>
+  :root {
+    --primary: #1a1a2e;
+    --accent: #e94560;
+    --gold: #f5a623;
+    --green: #27ae60;
+    --blue: #2980b9;
+    --light-bg: #f8f9fa;
+    --border: #dee2e6;
+    --text: #212529;
+    --muted: #6c757d;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: var(--text);
+    background: #fff;
+    line-height: 1.7;
+    font-size: 15px;
+  }
+
+  /* COVER PAGE */
+  .cover {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    color: white;
+    padding: 60px 40px;
+    text-align: center;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cover .badge {
+    background: var(--accent);
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+  .cover h1 span { color: var(--gold); }
+  .cover .subtitle {
+    font-size: 16px;
+    opacity: 0.85;
+    margin-bottom: 24px;
+  }
+  .cover .meta {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 16px;
+  }
+  .cover .meta-item {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    padding: 12px 20px;
+    text-align: center;
+    min-width: 130px;
+  }
+  .cover .meta-item .val { font-size: 22px; font-weight: 700; color: var(--gold); }
+  .cover .meta-item .lbl { font-size: 11px; opacity: 0.75; margin-top: 2px; }
+
+  /* TOC */
+  .toc {
+    background: var(--primary);
+    color: white;
+    padding: 30px 40px;
+    page-break-after: always;
+  }
+  .toc h2 { color: var(--gold); font-size: 20px; margin-bottom: 20px; letter-spacing: 1px; }
+  .toc-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .toc-item {
+    padding: 8px 14px;
+    border-left: 3px solid var(--accent);
+    background: rgba(255,255,255,0.06);
+    border-radius: 0 6px 6px 0;
+    font-size: 13.5px;
+  }
+  .toc-item .num { color: var(--gold); font-weight: 700; margin-right: 8px; }
+
+  /* SECTIONS */
+  .section {
+    padding: 40px 40px 30px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section:nth-child(even) { background: var(--light-bg); }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+  .section-num {
+    background: var(--accent);
+    color: white;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .section-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--primary);
+  }
+  .section-title span { color: var(--accent); }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 22px 0 10px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--gold);
+    display: inline-block;
+  }
+
+  p { margin-bottom: 12px; }
+
+  /* TABLES */
+  .table-wrap { overflow-x: auto; margin: 16px 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  thead tr { background: var(--primary); color: white; }
+  thead th { padding: 12px 14px; text-align: left; font-weight: 600; }
+  tbody tr:nth-child(even) { background: #f0f4f8; }
+  tbody tr:hover { background: #e8f0fe; }
+  td { padding: 10px 14px; border-bottom: 1px solid var(--border); }
+  .amt { font-weight: 700; color: var(--accent); }
+  .green { color: var(--green); font-weight: 600; }
+  .red { color: #e74c3c; font-weight: 600; }
+  .mand { background: #fdecea; color: #c0392b; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 600; }
+  .opt { background: #e8f5e9; color: #27ae60; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 600; }
+
+  /* CARDS */
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; margin: 16px 0; }
+  .card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px;
+    background: white;
+    border-top: 4px solid var(--accent);
+  }
+  .card h4 { font-size: 15px; font-weight: 700; margin-bottom: 8px; color: var(--primary); }
+  .card p { font-size: 13.5px; margin: 0; color: var(--muted); }
+  .card .price { font-size: 20px; font-weight: 800; color: var(--accent); margin: 8px 0 4px; }
+
+  /* HIGHLIGHT BOXES */
+  .box {
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin: 16px 0;
+  }
+  .box-warn { background: #fff3cd; border-left: 5px solid #f5a623; }
+  .box-info { background: #d1ecf1; border-left: 5px solid #2980b9; }
+  .box-success { background: #d4edda; border-left: 5px solid #27ae60; }
+  .box-danger { background: #f8d7da; border-left: 5px solid #e74c3c; }
+  .box-title { font-weight: 700; font-size: 14px; margin-bottom: 6px; }
+  .box ul { padding-left: 18px; margin-top: 8px; }
+  .box ul li { font-size: 13.5px; margin-bottom: 5px; }
+
+  /* STEPS */
+  .steps { counter-reset: step; }
+  .step {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+    counter-increment: step;
+  }
+  .step-num {
+    background: var(--primary);
+    color: white;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+  .step-content h4 { font-size: 15px; font-weight: 700; margin-bottom: 5px; }
+  .step-content p { font-size: 13.5px; color: var(--muted); margin: 0; }
+
+  /* WEEK PLAN */
+  .week {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 14px;
+    overflow: hidden;
+  }
+  .week-header {
+    background: var(--primary);
+    color: white;
+    padding: 10px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .week-header .wk { font-weight: 700; font-size: 15px; }
+  .week-header .wk-tag { background: var(--gold); color: var(--primary); padding: 3px 10px; border-radius: 12px; font-size: 12px; font-weight: 700; }
+  .week-body { padding: 14px 18px; }
+  .week-body ul { padding-left: 20px; }
+  .week-body ul li { font-size: 13.5px; margin-bottom: 6px; }
+
+  /* BUDGET SUMMARY */
+  .budget-bar { margin: 10px 0; }
+  .budget-bar-label { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 4px; }
+  .budget-bar-track { background: #e9ecef; border-radius: 4px; height: 12px; overflow: hidden; }
+  .budget-bar-fill { height: 100%; border-radius: 4px; background: var(--accent); }
+
+  /* TAGS */
+  .tag {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 2px;
+  }
+  .tag-blue { background: #dbeafe; color: #1e40af; }
+  .tag-green { background: #d1fae5; color: #065f46; }
+  .tag-orange { background: #fef3c7; color: #92400e; }
+  .tag-red { background: #fee2e2; color: #991b1b; }
+
+  /* FOOTER */
+  footer {
+    background: var(--primary);
+    color: rgba(255,255,255,0.7);
+    text-align: center;
+    padding: 24px;
+    font-size: 12.5px;
+  }
+  footer strong { color: var(--gold); }
+
+  .divider {
+    border: none;
+    border-top: 2px dashed var(--border);
+    margin: 20px 0;
+  }
+
+  ul.checklist { list-style: none; padding: 0; }
+  ul.checklist li::before { content: "✅ "; }
+  ul.checklist li { padding: 5px 0; font-size: 14px; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media(max-width: 700px) {
+    .two-col, .toc-grid, .card-grid { grid-template-columns: 1fr; }
+    .cover h1 { font-size: 22px; }
+    .section { padding: 24px 16px; }
+  }
+
+  .profit-calc {
+    background: linear-gradient(135deg, #1a1a2e, #0f3460);
+    color: white;
+    border-radius: 12px;
+    padding: 22px;
+    margin: 16px 0;
+  }
+  .profit-calc h4 { color: var(--gold); margin-bottom: 14px; font-size: 16px; }
+  .profit-calc .row { display: flex; justify-content: space-between; padding: 7px 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 14px; }
+  .profit-calc .row.total { border-top: 2px solid var(--gold); border-bottom: none; font-weight: 700; font-size: 16px; color: var(--gold); margin-top: 8px; padding-top: 12px; }
+  .profit-calc .neg { color: #ff6b6b; }
+  .profit-calc .pos { color: #51cf66; }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="cover">
+  <div class="badge">🇮🇳 Made for Indian Market • 2025</div>
+  <h1>Oversized T-Shirt Brand <span>Complete Guide</span></h1>
+  <p class="subtitle">Motera, Ahmedabad se Amazon, Flipkart & Myntra tak — Zero se Hero tak ka Safar</p>
+  <div class="meta">
+    <div class="meta-item">
+      <div class="val">₹30K</div>
+      <div class="lbl">Budget Plan</div>
+    </div>
+    <div class="meta-item">
+      <div class="val">90</div>
+      <div class="lbl">Din ka Roadmap</div>
+    </div>
+    <div class="meta-item">
+      <div class="val">3</div>
+      <div class="lbl">Marketplaces</div>
+    </div>
+    <div class="meta-item">
+      <div class="val">15</div>
+      <div class="lbl">Modules</div>
+    </div>
+  </div>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<div class="toc">
+  <h2>📋 TABLE OF CONTENTS</h2>
+  <div class="toc-grid">
+    <div class="toc-item"><span class="num">01</span>Business Setup — Kaun sa structure chune?</div>
+    <div class="toc-item"><span class="num">02</span>Mandatory Registrations — Documents & Licenses</div>
+    <div class="toc-item"><span class="num">03</span>Marketplace Registration — Amazon, Flipkart, Myntra</div>
+    <div class="toc-item"><span class="num">04</span>₹30,000 Investment Breakdown</div>
+    <div class="toc-item"><span class="num">05</span>Marketplace Fees — Kitna katega?</div>
+    <div class="toc-item"><span class="num">06</span>Brand Building — Apna brand banao</div>
+    <div class="toc-item"><span class="num">07</span>Product Listing — High-converting listings</div>
+    <div class="toc-item"><span class="num">08</span>Pricing Strategy — Sahi daam kaise lagayein</div>
+    <div class="toc-item"><span class="num">09</span>Operations — Roz ka kaam</div>
+    <div class="toc-item"><span class="num">10</span>Marketing Plan — Bechna shuru karo</div>
+    <div class="toc-item"><span class="num">11</span>Ahmedabad Resources — Local contacts</div>
+    <div class="toc-item"><span class="num">12</span>Financial Planning — Paise ka hisaab</div>
+    <div class="toc-item"><span class="num">13</span>90-Day Action Plan — Week by Week</div>
+    <div class="toc-item"><span class="num">14</span>Risk Analysis — Galtiyon se bacho</div>
+    <div class="toc-item"><span class="num">15</span>Renewals & Ongoing Costs</div>
+  </div>
+</div>
+
+<!-- ===================== SECTION 1 ===================== -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">1</div>
+    <div class="section-title">Business Setup — <span>Kaun sa Structure Chune?</span></div>
+  </div>
+
+  <div class="box box-warn">
+    <div class="box-title">💡 ₹30K Budget ke liye Recommendation</div>
+    Tumhara budget limited hai, isliye <strong>Sole Proprietorship</strong> sab se best option hai. Koi registration fee nahi, GST se hi kaam chalega. Jab business grow kare (6-12 months baad), tab Private Limited mein convert kar sakte ho.
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Structure</th>
+          <th>Setup Cost</th>
+          <th>Complexity</th>
+          <th>Tax</th>
+          <th>Liability</th>
+          <th>Best For</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Individual</strong></td>
+          <td class="amt">₹0</td>
+          <td>Bahut Simple</td>
+          <td>Personal Tax</td>
+          <td>Full Personal</td>
+          <td>Testing only</td>
+        </tr>
+        <tr style="background:#d4edda;">
+          <td><strong>✅ Sole Proprietorship</strong></td>
+          <td class="amt">₹0–500</td>
+          <td>Simple</td>
+          <td>Personal Tax slab</td>
+          <td>Personal</td>
+          <td><strong>Beginners — RECOMMENDED</strong></td>
+        </tr>
+        <tr>
+          <td><strong>Partnership</strong></td>
+          <td class="amt">₹2,000–5,000</td>
+          <td>Medium</td>
+          <td>30% flat</td>
+          <td>Joint & Personal</td>
+          <td>2+ founders</td>
+        </tr>
+        <tr>
+          <td><strong>LLP</strong></td>
+          <td class="amt">₹6,000–10,000</td>
+          <td>Medium</td>
+          <td>30% flat</td>
+          <td>Limited</td>
+          <td>Scaling phase</td>
+        </tr>
+        <tr>
+          <td><strong>Private Limited</strong></td>
+          <td class="amt">₹8,000–15,000</td>
+          <td>Complex</td>
+          <td>25% corporate</td>
+          <td>Limited</td>
+          <td>Growth stage / Investment</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Sole Proprietorship — Kaise banate hain?</h3>
+  <p>Technically koi separate registration nahi hoti. Bas GST registration lo + current account kholo apne business naam se. Business naam decide karo (e.g., <em>"Dropzone Apparel"</em> ya <em>"Oversized Co."</em>).</p>
+
+  <div class="box box-success">
+    <div class="box-title">✅ Sole Proprietorship ke Fayde (Tum jaise Beginner ke liye)</div>
+    <ul>
+      <li>Registration fee zero — same din shuru karo</li>
+      <li>Compliance bahut simple — ek GST return file karna hoga</li>
+      <li>Bank account asaani se khulta hai</li>
+      <li>Amazon, Flipkart, Myntra — teeno accept karte hain</li>
+      <li>Agar business nahi chala, band karna bhi simple</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===================== SECTION 2 ===================== -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">2</div>
+    <div class="section-title">Mandatory Registrations — <span>Documents & Licenses</span></div>
+  </div>
+
+  <h3>Mandatory Registrations — Complete Checklist</h3>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Registration</th><th>Cost</th><th>Time</th><th>Mandatory?</th><th>Platform Needed?</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>PAN Card</strong><br><small>Income Tax PAN</small></td>
+          <td class="amt">₹107</td>
+          <td>3–7 days</td>
+          <td><span class="mand">MANDATORY</span></td>
+          <td>Amazon ✓ Flipkart ✓ Myntra ✓</td>
+        </tr>
+        <tr>
+          <td><strong>GST Registration</strong><br><small>GSTIN lena</small></td>
+          <td class="amt">₹0 (Free)</td>
+          <td>3–7 working days</td>
+          <td><span class="mand">MANDATORY</span></td>
+          <td>Amazon ✓ Flipkart ✓ Myntra ✓</td>
+        </tr>
+        <tr>
+          <td><strong>Bank Current Account</strong><br><small>Business naam se</small></td>
+          <td class="amt">₹0–2,000</td>
+          <td>1–3 days</td>
+          <td><span class="mand">MANDATORY</span></td>
+          <td>Amazon ✓ Flipkart ✓ Myntra ✓</td>
+        </tr>
+        <tr>
+          <td><strong>UDYAM/MSME Registration</strong><br><small>Free online registration</small></td>
+          <td class="amt">₹0 (Free)</td>
+          <td>Same day</td>
+          <td><span class="opt">OPTIONAL</span></td>
+          <td>Benefits milte hain loans mein</td>
+        </tr>
+        <tr>
+          <td><strong>Trademark Registration</strong><br><small>Brand naam protect karna</small></td>
+          <td class="amt">₹4,500 (small entity)</td>
+          <td>18–36 months</td>
+          <td><span class="opt">OPTIONAL</span></td>
+          <td>Brand protection ke liye</td>
+        </tr>
+        <tr>
+          <td><strong>GS1 Barcode</strong><br><small>Product barcode</small></td>
+          <td class="amt">₹5,000–8,000/year</td>
+          <td>2–5 days</td>
+          <td><span class="mand">NEEDED</span></td>
+          <td>Amazon/Flipkart listing ke liye</td>
+        </tr>
+        <tr>
+          <td><strong>Shop & Establishment Act</strong><br><small>Gujarat Local Body</small></td>
+          <td class="amt">₹500–2,000</td>
+          <td>7–15 days</td>
+          <td><span class="opt">OPTIONAL</span></td>
+          <td>Home-based: Zaruri nahi</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>GST Registration — Step by Step</h3>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h4>GST Portal par jao: gst.gov.in</h4>
+        <p>"New Registration" click karo → "Taxpayer" select karo</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h4>Part A Fill karo</h4>
+        <p>Legal name (PAN se match karna chahiye), email, mobile number → OTP verify karo</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h4>Part B Fill karo</h4>
+        <p>Business details: address (Motera, Ahmedabad), business type, HSN code for T-shirts = <strong>6109</strong> (T-shirts, singlets, other vests, knitted)</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <h4>Documents Upload karo</h4>
+        <p>PAN, Aadhar, Address proof (electricity bill), bank statement/cancelled cheque, photo</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <div class="step-content">
+        <h4>ARN Number milega</h4>
+        <p>Application Reference Number — isse track kar sakte ho. 3–7 working days mein GSTIN milega.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="box box-info">
+    <div class="box-title">📌 GST Tax Rate for T-Shirts (2025)</div>
+    <ul>
+      <li>T-shirts priced <strong>up to ₹999</strong> → GST = <strong>5%</strong> (HSN 6109)</li>
+      <li>T-shirts priced <strong>₹1,000+</strong> → GST = <strong>12%</strong></li>
+      <li>Tumhara selling price ₹600–900 rakho → 5% GST zone mein rehna affordable hai</li>
+    </ul>
+  </div>
+
+  <h3>GS1 Barcode — Beginner ke liye Shortcut</h3>
+  <div class="box box-warn">
+    <div class="box-title">⚡ Budget-saving tip</div>
+    <ul>
+      <li><strong>Amazon ke liye:</strong> Amazon ka apna ASIN hota hai — ek baar listing banao, barcode ki zaroorat shuruat mein kam hoti hai. Amazon Brand Registry ke liye brand naam chahiye.</li>
+      <li><strong>GS1 India:</strong> gs1india.org — basic annual membership ₹5,000 se shuru. 10 barcodes milte hain.</li>
+      <li><strong>Free alternative:</strong> Flipkart apna FSN deta hai, Myntra apna Style ID. Shuruat mein GS1 delay kar sakte ho (2-3 months).</li>
+    </ul>
+  </div>
+
+  <h3>Trademark — Zarurat Hai Ya Nahi?</h3>
+  <div class="two-col">
+    <div>
+      <p><strong>Kya hota hai:</strong> Tumhara brand naam (logo ke saath) legally protect hota hai. Koi copy nahi kar sakta.</p>
+      <p><strong>Process:</strong> ipindia.gov.in → Trademark e-filing → Class 25 (Clothing)</p>
+      <p><strong>Cost (small entity):</strong> ₹4,500 per class online</p>
+      <p><strong>Timeline:</strong> 18–36 months (filing ke baad "TM" use kar sakte ho)</p>
+      <p><strong>Renewal:</strong> Har 10 saal mein ₹9,000</p>
+    </div>
+    <div class="box box-info">
+      <div class="box-title">₹30K Budget Advice</div>
+      <ul>
+        <li>Phase 1 (Month 1-3): Trademark mat karo — save karo</li>
+        <li>Phase 2 (Month 4-6): Jab brand naam finalize ho, tab file karo</li>
+        <li>Filing ke turant baad "TM" symbol use kar sakte ho</li>
+        <li>Brand Registry ke liye Amazon pe trademark zaruri hai</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== SECTION 3 ===================== -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">3</div>
+    <div class="section-title">Marketplace Registration — <span>Amazon, Flipkart, Myntra</span></div>
+  </div>
+
+  <h3>Amazon India Seller Central — Registration</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Step</th><th>Kya Karna Hai</th><th>Documents</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>sellercentral.amazon.in par jao → "Start Selling"</td><td>Mobile number</td></tr>
+        <tr><td>2</td><td>Account type: Individual ya Professional (Professional = ₹499/month, Individual = free)</td><td>—</td></tr>
+        <tr><td>3</td><td>Business information fill karo</td><td>PAN, GST number, business name</td></tr>
+        <tr><td>4</td><td>Bank account details dalo</td><td>Cancelled cheque ya bank statement</td></tr>
+        <tr><td>5</td><td>Store name choose karo</td><td>Brand naam (unique hona chahiye)</td></tr>
+        <tr><td>6</td><td>Tax details verify</td><td>GST certificate</td></tr>
+        <tr><td>7</td><td>Approval</td><td>Usually 24–48 hours</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="box box-warn">
+    <div class="box-title">💡 Amazon Individual vs Professional Plan</div>
+    <ul>
+      <li><strong>Individual Plan (Free):</strong> ₹0/month, but har sale pe ₹2 extra charge. 40 se kam items sell karo tab tak sahi hai.</li>
+      <li><strong>Professional Plan (₹499/month):</strong> Unlimited listings, ads run kar sakte ho, Buy Box win kar sakte ho. Jab selling start ho, upgrade karo.</li>
+      <li><strong>₹30K budget: Individual se start karo</strong></li>
+    </ul>
+  </div>
+
+  <h3>Flipkart Seller Hub — Registration</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Step</th><th>Kya Karna Hai</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>seller.flipkart.com → "Register Now"</td></tr>
+        <tr><td>2</td><td>Mobile verify karo (OTP)</td></tr>
+        <tr><td>3</td><td>Business details: naam, address, GST, PAN</td></tr>
+        <tr><td>4</td><td>Bank account details add karo</td></tr>
+        <tr><td>5</td><td>Documents upload: GST certificate, PAN, cancelled cheque</td></tr>
+        <tr><td>6</td><td>Address verification: Pickup address dalo (Motera, Ahmedabad)</td></tr>
+        <tr><td>7</td><td>Approval: 2–5 working days</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Myntra Seller Program — Registration</h3>
+  <div class="box box-danger">
+    <div class="box-title">⚠️ Myntra ke liye Extra Requirements</div>
+    <ul>
+      <li>Myntra ek <strong>premium marketplace</strong> hai — sab ko accept nahi karta</li>
+      <li>Brand image, professional photography, minimum catalog size chahiye</li>
+      <li>Recommendation: <strong>Pahle Amazon + Flipkart pe stable ho jao</strong>, phir Myntra apply karo (Month 3-4)</li>
+      <li>Registration: myntra.com/seller → "Become a Seller" form bharo</li>
+      <li>Required: GST, PAN, Trademark (preferred), min. 20 SKUs</li>
+      <li>Approval: 2–4 weeks (manual review hota hai)</li>
+    </ul>
+  </div>
+
+  <h3>Common Rejection Reasons & Solutions</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Rejection Reason</th><th>Platform</th><th>Solution</th></tr></thead>
+      <tbody>
+        <tr><td>GST mismatch</td><td>Sabhi</td><td>GST address & PAN name exactly match karo</td></tr>
+        <tr><td>Bank account not current</td><td>Amazon</td><td>Current account kholo (savings nahi chalega)</td></tr>
+        <tr><td>Poor product images</td><td>Myntra</td><td>White background, professional photos</td></tr>
+        <tr><td>Brand name already exists</td><td>Amazon</td><td>Unique store name choose karo</td></tr>
+        <tr><td>Duplicate account</td><td>Sabhi</td><td>Ek hi account banao, same mobile/email use mat karo</td></tr>
+        <tr><td>Incomplete documents</td><td>Sabhi</td><td>Sab documents ready rakh ke apply karo</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ===================== SECTION 4 ===================== -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">4</div>
+    <div class="section-title">₹30,000 Budget — <span>Complete Investment Breakdown</span></div>
+  </div>
+
+  <div class="box box-danger">
+    <div class="box-title">🚨 ₹30,000 Mein Reality Check</div>
+    ₹30K ek tight budget hai. Smart allocation zaruri hai. Niche diya gaya plan specifically ₹30K ke liye optimize kiya gaya hai — kuch optional cheezein baad mein karni hogi. Inventory pe sabse zyada focus karo.
+  </div>
+
+  <h3>₹30,000 Budget Allocation Plan</h3>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Expense Category</th><th>₹30K Plan</th><th>Type</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>🛍️ Inventory (T-shirts)</strong></td><td class="amt">₹15,000</td><td><span class="mand">MUST</span></td><td>30–40 pieces @ ₹375–500 avg cost</td></tr>
+        <tr><td><strong>📦 Packaging</strong></td><td class="amt">₹2,000</td><td><span class="mand">MUST</span></td><td>Poly bags, thank you cards, tape</td></tr>
+        <tr><td><strong>🏛️ GST Registration</strong></td><td class="amt">₹0</td><td><span class="mand">MUST</span></td><td>Free — gst.gov.in</td></tr>
+        <tr><td><strong>🏦 Current Account</strong></td><td class="amt">₹0–500</td><td><span class="mand">MUST</span></td><td>Zero balance accounts available</td></tr>
+        <tr><td><strong>📸 Product Photography</strong></td><td class="amt">₹2,000</td><td><span class="mand">MUST</span></td><td>DIY ya local photographer (see tips)</td></tr>
+        <tr><td><strong>🎨 Logo Design</strong></td><td class="amt">₹500–1,000</td><td><span class="mand">MUST</span></td><td>Canva (free) ya Fiverr (₹500)</td></tr>
+        <tr><td><strong>🏷️ Hang Tags / Woven Labels</strong></td><td class="amt">₹1,500</td><td><span class="mand">MUST</span></td><td>100 pieces min order</td></tr>
+        <tr><td><strong>🔢 Barcodes (GS1)</strong></td><td class="amt">₹0</td><td><span class="opt">DELAY</span></td><td>Phase 2 mein karein (Month 2)</td></tr>
+        <tr><td><strong>©️ Trademark</strong></td><td class="amt">₹0</td><td><span class="opt">DELAY</span></td><td>Phase 2 mein — jab revenue aaye</td></tr>
+        <tr><td><strong>🚚 Shipping (First Orders)</strong></td><td class="amt">₹1,500</td><td><span class="mand">MUST</span></td><td>Easy Ship / Shiprocket budget</td></tr>
+        <tr><td><strong>📱 Amazon Professional Plan</strong></td><td class="amt">₹0</td><td><span class="opt">DELAY</span></td><td>Individual se start karo</td></tr>
+        <tr><td><strong>🎯 Ads Budget</strong></td><td class="amt">₹2,000</td><td><span class="mand">IMPORTANT</span></td><td>Amazon PPC — basic campaigns</td></tr>
+        <tr><td><strong>📋 Misc (stationery, internet)</strong></td><td class="amt">₹1,000</td><td><span class="opt">BUFFER</span></td><td>Emergency fund</td></tr>
+        <tr style="background:#fdecea;"><td><strong>💰 TOTAL (₹30K Plan)</strong></td><td class="amt" style="font-size:18px;">₹25,500–27,000</td><td colspan="2"><strong>₹3,000–4,500 backup reserve rakhna MUST hai</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Budget Comparison Table</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Category</th><th>Minimum (₹30K)</th><th>Recommended (₹60K)</th><th>Professional (₹1.5L+)</th></tr></thead>
+      <tbody>
+        <tr><td>Inventory</td><td class="amt">₹15,000</td><td class="amt">₹30,000</td><td class="amt">₹80,000</td></tr>
+        <tr><td>Photography</td><td>₹2,000 (DIY)</td><td>₹8,000 (Studio)</td><td>₹20,000 (Professional)</td></tr>
+        <tr><td>Logo/Branding</td><td>₹1,000 (Canva)</td><td>₹5,000 (Designer)</td><td>₹20,000 (Agency)</td></tr>
+        <tr><td>Packaging</td><td>₹2,000 (Basic)</td><td>₹6,000 (Branded)</td><td>₹15,000 (Premium)</td></tr>
+        <tr><td>Ads Budget</td><td>₹2,000</td><td>₹10,000</td><td>₹30,000</td></tr>
+        <tr><td>Trademark</td><td>₹0 (Later)</td><td>₹4,500</td><td>₹4,500</td></tr>
+        <tr><td>GS1 Barcode</td><td>₹0 (Later)</td><td>₹5,000</td><td>₹8,000</td></tr>
+        <tr style="background:#d4edda;"><td><strong>TOTAL</strong></td><td class="amt"><strong>₹25,000–28,000</strong></td><td class="amt"><strong>₹60,000–70,000</strong></td><td class="amt"><strong>₹1,50,000+</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="box box-success">
+    <div class="box-title">✅ ₹30K mein kya possible hai?</div>
+    <ul>
+      <li>30–40 T-shirts ki initial inventory</li>
+      <li>Amazon + Flipkart pe listed hona</li>
+      <li>Basic branding (logo, hang tags)</li>
+      <li>Small ads campaign</li>
+      <li>Pehle 15–20 orders fulfill karna</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===================== SECTION 5 ===================== -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">5</div>
+    <div class="section-title">Marketplace Fees — <span>Kitna Katega?</span></div>
+  </div>
+
+  <h3>Amazon India Fees (T-shirts, Apparel Category)</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Fee Type</th><th>Amount</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>Referral Fee (Commission)</td><td class="amt">10%–15%</td><td>Selling price ka % — apparel pe ~15%</td></tr>
+        <tr><td>Professional Seller Plan</td><td class="amt">₹499/month</td><td>Individual plan = ₹2 per sale + higher fees</td></tr>
+        <tr><td>Easy Ship (Amazon Shipping)</td><td class="amt">₹30–80/order</td><td>Weight + zone pe depend karta hai (0-500g: ₹30)</td></tr>
+        <tr><td>FBA (Fulfilled by Amazon)</td><td class="amt">₹45–150+</td><td>Shuruat mein zaruri nahi — Easy Ship use karo</td></tr>
+        <tr><td>Closing Fee</td><td class="amt">₹5–30</td><td>Price bracket ke hisaab se</td></tr>
+        <tr><td>Payment Settlement</td><td class="amt">7–14 days</td><td>Successful delivery ke baad</td></tr>
+        <tr><td>Returns (seller account)</td><td class="amt">0%–5%</td><td>Category pe depend — apparel mein returns zyada</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Flipkart Fees</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Fee Type</th><th>Amount</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>Commission (Referral)</td><td class="amt">5%–15%</td><td>Clothing: ~10–12%</td></tr>
+        <tr><td>Shipping Fee</td><td class="amt">₹40–90/order</td><td>Seller Fulfilled: thoda zyada</td></tr>
+        <tr><td>Collection Fee</td><td class="amt">~2%</td><td>Payment gateway charge</td></tr>
+        <tr><td>Fixed Fee</td><td class="amt">₹25–50</td><td>Per order charge</td></tr>
+        <tr><td>Payment Settlement</td><td class="amt">7–10 days</td><td>Delivery ke baad</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Myntra Fees</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Fee Type</th><th>Amount</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>Commission</td><td class="amt">18%–25%</td><td>Fashion category mein highest commission</td></tr>
+        <tr><td>Shipping</td><td class="amt">₹0</td><td>Myntra khud handle karta hai</td></tr>
+        <tr><td>Returns Handling</td><td class="amt">Included</td><td>Reverse logistics Myntra ka</td></tr>
+        <tr><td>Payment Settlement</td><td class="amt">15–21 days</td><td>Thoda slow hai</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="profit-calc">
+    <h4>💰 Real Example: ₹699 ka T-shirt becha Amazon pe</h4>
+    <div class="row"><span>Selling Price</span><span class="pos">+ ₹699</span></div>
+    <div class="row"><span>Amazon Commission (15%)</span><span class="neg">- ₹105</span></div>
+    <div class="row"><span>Shipping (Easy Ship)</span><span class="neg">- ₹45</span></div>
+    <div class="row"><span>Closing Fee</span><span class="neg">- ₹10</span></div>
+    <div class="row"><span>GST collected (5%)</span><span style="color:#aaa;">= ₹33 (govt ko)</span></div>
+    <div class="row"><span>Amazon se Net Amount</span><span class="pos">≈ ₹539</span></div>
+    <div class="row"><span>T-shirt Cost (purchase)</span><span class="neg">- ₹350</span></div>
+    <div class="row"><span>Packaging Cost</span><span class="neg">- ₹30</span></div>
+    <div class="row total"><span>NET PROFIT per T-shirt</span><span>≈ ₹159 (~23%)</span></div>
+  </div>
+</div>
+
+<!-- ===================== SECTION 6 ===================== -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">6</div>
+    <div class="section-title">Brand Building — <span>Apna Brand Banao</span></div>
+  </div>
+
+  <h3>Brand Name Choose Karna</h3>
+  <div class="card-grid">
+    <div class="card">
+      <h4>✅ Acha Brand Name Kaisa Hota Hai</h4>
+      <p>2 syllables, easy to pronounce, memorable, unique. T-shirt vibe feel ho. E.g.: <strong>Dropzone, Ovefit, Loosewear, Blokk, Rawthread</strong></p>
+    </div>
+    <div class="card">
+      <h4>❌ Ye Mistakes Mat Karo</h4>
+      <p>Copy existing brands (Nike, H&M inspired), too generic ("India Tees"), difficult spelling, number-heavy names</p>
+    </div>
+    <div class="card">
+      <h4>🔍 Name Check Karo</h4>
+      <p>ipindia.gov.in pe trademark search karo. Instagram/Facebook pe search karo. Domain availability check karo (Godaddy).</p>
+    </div>
+  </div>
+
+  <h3>Logo Banane ke Options (₹30K Budget)</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Option</th><th>Cost</th><th>Quality</th><th>Best For</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Canva (Free)</strong></td><td class="amt">₹0</td><td>Basic</td><td>Day 1 start ke liye</td></tr>
+        <tr><td><strong>Fiverr (Indian freelancer)</strong></td><td class="amt">₹500–1,500</td><td>Good</td><td>Recommended — ₹30K budget</td></tr>
+        <tr><td><strong>Freelancer.com</strong></td><td class="amt">₹1,000–3,000</td><td>Very Good</td><td>Better quality chahiye to</td></tr>
+        <tr><td><strong>Local Ahmedabad Designer</strong></td><td class="amt">₹2,000–5,000</td><td>Excellent</td><td>Phase 2 mein</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Packaging Recommendations</h3>
+  <div class="box box-info">
+    <div class="box-title">📦 ₹30K Budget Packaging Strategy</div>
+    <ul>
+      <li><strong>Poly Bag:</strong> Plain white/black ziplock bags (₹3–5 per piece) — 100 pcs = ₹300–500</li>
+      <li><strong>Thank You Card:</strong> Canva se design karo, local printer se print karo (₹0.50 per card) — 100 pcs = ₹50</li>
+      <li><strong>Sticker (Brand Name):</strong> Round sticker logo seal (₹1–2 per piece)</li>
+      <li><strong>Hang Tag:</strong> 300 gsm card print karo, string lagao (₹3–5 per piece)</li>
+      <li><strong>Woven Label (inside tshirt):</strong> Min order 100 pcs @ ₹8–15/piece — Ahmedabad mein milte hain</li>
+      <li><strong>Total packaging cost per order: ₹25–40</strong></li>
+    </ul>
+  </div>
+
+  <h3>Product Photography — Budget Tips</h3>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h4>DIY Ghost Mannequin (Cheapest)</h4>
+        <p>White wall background + natural daylight + phone camera (Redmi, Samsung). Free editing: Snapseed, Lightroom Mobile. Cost: ₹0</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h4>Flat Lay Photography</h4>
+        <p>T-shirt ko flat surface pe rakh ke upar se photo lo. White bedsheet background use karo. Amazon pe ye approach bhi acceptable hai.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h4>Local Photographer (Recommended)</h4>
+        <p>Ahmedabad mein freelance photographers milte hain ₹1,500–2,500 mein 10–15 products shoot ke liye. Search: "product photographer Ahmedabad"</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== SECTION 7 ===================== -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">7</div>
+    <div class="section-title">Product Listing — <span>High-Converting Listings</span></div>
+  </div>
+
+  <h3>Perfect Product Title Formula</h3>
+  <div class="box box-success">
+    <div class="box-title">📝 Amazon Title Formula (90 characters max recommended)</div>
+    <strong>[Brand Name] + [Product Type] + [Key Feature] + [Gender] + [Fit/Size Info] + [Color/Style]</strong>
+    <br><br>
+    <strong>Example:</strong> "Dropzone Oversized T-Shirt for Men | Drop Shoulder Loose Fit | 240 GSM Cotton | Black"
+  </div>
+
+  <h3>SEO Keywords for Oversized T-Shirts (India)</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>High Volume Keywords</th><th>Medium Volume</th><th>Long-tail (Specific)</th></tr></thead>
+      <tbody>
+        <tr><td>oversized t shirt men</td><td>drop shoulder tshirt</td><td>oversized tshirt for men black cotton</td></tr>
+        <tr><td>oversized tshirt women</td><td>baggy tshirt india</td><td>streetwear oversized tshirt india</td></tr>
+        <tr><td>loose fit tshirt</td><td>boxy fit tshirt</td><td>240 gsm oversized tshirt</td></tr>
+        <tr><td>streetwear tshirt india</td><td>half sleeve oversized</td><td>unisex oversized tshirt XS to XXL</td></tr>
+        <tr><td>cotton oversized tshirt</td><td>aesthetic tshirt</td><td>couple oversized tshirt matching</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Bullet Point Template (Amazon/Flipkart)</h3>
+  <div class="box box-info">
+    <div class="box-title">5 Bullet Points Template</div>
+    <ul>
+      <li>🔵 <strong>PREMIUM COTTON FABRIC:</strong> 240 GSM 100% combed cotton — breathable, soft, long-lasting. Ghar wash karo, shape wahi rehti hai.</li>
+      <li>🔵 <strong>PERFECT OVERSIZED FIT:</strong> Drop shoulder design with extra-long body — authentic streetwear look for men & women both.</li>
+      <li>🔵 <strong>SIZE GUIDE INCLUDED:</strong> XS to XXL available — size chart dekh ke order karo. Height 5'8" = L recommend.</li>
+      <li>🔵 <strong>VERSATILE STYLING:</strong> Casual outing, gym, college, work-from-home — har jagah perfect. Jeans, joggers, shorts — sab ke saath.</li>
+      <li>🔵 <strong>BRAND PROMISE:</strong> 7-day easy return. Any issue ho toh direct message karo — personally solve karenge.</li>
+    </ul>
+  </div>
+
+  <h3>Image Requirements</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Image Type</th><th>Platform Requirement</th><th>Pro Tips</th></tr></thead>
+      <tbody>
+        <tr><td>Main Image</td><td>White background, min 1000x1000px</td><td>Product clearly visible, no text/logo</td></tr>
+        <tr><td>Lifestyle Image</td><td>Model pe pehna hua</td><td>Urban/streetwear feel — best converter</td></tr>
+        <tr><td>Detail Shot</td><td>Fabric texture, stitching closeup</td><td>Quality prove karta hai</td></tr>
+        <tr><td>Size Chart</td><td>Recommended on all platforms</td><td>Returns kam hoti hain 30–40%</td></tr>
+        <tr><td>Back View</td><td>Optional but recommended</td><td>Customer ko full picture milti hai</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ===================== SECTION 8 ===================== -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">8</div>
+    <div class="section-title">Pricing Strategy — <span>Sahi Daam Kaise Lagayein</span></div>
+  </div>
+
+  <h3>Selling Price Calculate Karna</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Cost Component</th><th>Per T-shirt (₹)</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>T-shirt Purchase Cost</td><td class="amt">₹300–450</td><td>Wholesale Ahmedabad se</td></tr>
+        <tr><td>Woven Label / Hang Tag</td><td class="amt">₹15–25</td><td>Branding cost</td></tr>
+        <tr><td>Packaging (poly bag + card)</td><td class="amt">₹25–40</td><td>Presentation cost</td></tr>
+        <tr><td>Shipping to Customer</td><td class="amt">₹45–80</td><td>Easy Ship / Shiprocket</td></tr>
+        <tr><td>Amazon/Flipkart Commission</td><td class="amt">~15% of SP</td><td>Selling price ka %</td></tr>
+        <tr><td>Closing Fee</td><td class="amt">₹10–25</td><td>Platform fee</td></tr>
+        <tr><td>Return Buffer (10%)</td><td class="amt">₹50–70</td><td>Apparel mein returns aate hain</td></tr>
+        <tr style="background:#fef3c7;"><td><strong>Total Cost</strong></td><td class="amt"><strong>~₹480–580</strong></td><td>Ek T-shirt bechne ki total lagat</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="profit-calc">
+    <h4>📊 3 Pricing Scenarios</h4>
+    <div class="row"><span>Scenario</span><span>Price / Profit / Margin</span></div>
+    <div class="row"><span>🔴 Low Price (₹599)</span><span class="neg">₹20–50 profit (~5–8%) — Barely covers costs</span></div>
+    <div class="row"><span>🟡 Mid Price (₹699)</span><span style="color:#f5a623;">₹120–160 profit (~17–23%) — Good starting point</span></div>
+    <div class="row"><span>🟢 Sweet Price (₹799)</span><span class="pos">₹200–260 profit (~25–32%) — Recommended</span></div>
+    <div class="row total"><span>✅ RECOMMENDED PRICE</span><span>₹699 – ₹849 (Indian market sweet spot)</span></div>
+  </div>
+
+  <h3>Competitor Price Analysis</h3>
+  <div class="box box-info">
+    <div class="box-title">🔍 Amazon pe Competitor Research Kaise Karein</div>
+    <ul>
+      <li>Amazon search karo: "oversized tshirt men" → Top 20 results dekhо</li>
+      <li>Price range note karo: ₹399–₹1,499 hoga typical range</li>
+      <li>Reviews dekhо: 4+ stars, 100+ reviews wale sellers strong hain</li>
+      <li>Their weaknesses dhundho: poor photos, bad size charts, no lifestyle images</li>
+      <li><strong>Positioning:</strong> ₹700–900 range mein "premium feel, affordable price" approach lo</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===================== SECTION 9 ===================== -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">9</div>
+    <div class="section-title">Operations — <span>Roz ka Kaam</span></div>
+  </div>
+
+  <h3>Order Processing Flow</h3>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h4>Order Notification</h4>
+        <p>Amazon/Flipkart app se push notification aayega. Immediately check karo.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h4>Packing (2–4 hours)</h4>
+        <p>T-shirt fold karo → woven label check karo → poly bag mein pack karo → thank you card daalo → seal karo → shipping label print karo</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h4>Dispatch (Same Day)</h4>
+        <p>Amazon Easy Ship: pickup schedule karo same day mein. Same-day dispatch = better seller metrics</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <h4>Tracking Update</h4>
+        <p>Automatically hota hai Easy Ship mein. Customer ko tracking SMS milta hai.</p>
+      </div>
+    </div>
+  </div>
+
+  <h3>Returns Management</h3>
+  <div class="box box-warn">
+    <div class="box-title">⚠️ T-shirt mein Returns Zyada Aate Hain — Kya Karna Hai?</div>
+    <ul>
+      <li>Size chart clearly mention karo — most returns size issues se hoti hain</li>
+      <li>Fabric description accurate rakho — "thin" T-shirt ko "premium" mat bolo</li>
+      <li>Amazon return rate 10–15% normal hai apparel mein — price mein factor in karo</li>
+      <li>Returned items inspect karo — resellable hai to re-pack karo, nahi to side pe rakh lo</li>
+      <li>Fake returns report karo Amazon pe — evidence (photos/video) se support case bana sakte ho</li>
+    </ul>
+  </div>
+
+  <h3>Inventory Management (Simple System)</h3>
+  <div class="box box-success">
+    <div class="box-title">📊 Free Tool: Google Sheets se karo shuruat</div>
+    <ul>
+      <li>Columns: SKU, Size, Color, Purchase Price, Quantity In, Quantity Sold, Stock Left</li>
+      <li>Daily update karo — 5 minute ka kaam</li>
+      <li>Jab stock = 5 pieces bachein → reorder karo</li>
+      <li>Later mein free tools try karo: Zoho Inventory (free tier), Vyapar App</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===================== SECTION 10 ===================== -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">10</div>
+    <div class="section-title">Marketing Plan — <span>Bechna Shuru Karo</span></div>
+  </div>
+
+  <h3>Phase 1: Amazon PPC (Paid Ads) — Priority #1</h3>
+  <div class="box box-info">
+    <div class="box-title">🎯 Amazon PPC Beginners Guide (₹2,000 Budget)</div>
+    <ul>
+      <li><strong>Auto Campaign:</strong> Amazon khud decide karta hai kahan show karna — beginners ke liye BEST</li>
+      <li>Budget: ₹100–150/day se start karo</li>
+      <li>Bid: ₹5–10 per click se start</li>
+      <li>2 weeks data dekho — kaunse keywords work kar rahe hain → manual campaign banao</li>
+      <li>ACOS (Advertising Cost of Sale) 30–40% acceptable hai starting mein</li>
+    </ul>
+  </div>
+
+  <h3>Instagram Marketing — Organic Growth</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Activity</th><th>Frequency</th><th>Cost</th><th>Expected Impact</th></tr></thead>
+      <tbody>
+        <tr><td>Outfit Reels (wearing tshirt)</td><td>3x per week</td><td>₹0</td><td>High — Reels viral ho sakte hain</td></tr>
+        <tr><td>Flat lay product posts</td><td>4x per week</td><td>₹0</td><td>Medium — brand aesthetic build karta hai</td></tr>
+        <tr><td>Customer unboxing reposts</td><td>Jab mile</td><td>₹0</td><td>High — social proof</td></tr>
+        <tr><td>Micro-influencer collab</td><td>1x per month</td><td>₹0–2,000</td><td>Very High</td></tr>
+        <tr><td>Instagram Story polls</td><td>Daily</td><td>₹0</td><td>Engagement boost</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Influencer Marketing — ₹30K Budget Strategy</h3>
+  <div class="box box-warn">
+    <div class="box-title">💡 Barter Collaboration (Free!) — Sabse Smart Move</div>
+    <ul>
+      <li><strong>Nano Influencers (1K–10K followers):</strong> Unhe FREE T-shirt bhejo = unboxing/review post karenge</li>
+      <li>Ahmedabad-based fashion/lifestyle influencers dhundho Instagram pe</li>
+      <li>Message format: "Hi [Name], main Ahmedabad se ek new oversized brand launch kar raha/rahi hoon. Aapko ek free T-shirt bhejun? Bas ek honest post/story kaafi hai 😊"</li>
+      <li>10 influencers ko approach karo → 3–4 yes karenge → ₹0 cost mein exposure</li>
+    </ul>
+  </div>
+
+  <h3>Month-by-Month Marketing Budget</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Month</th><th>Amazon PPC</th><th>Influencers</th><th>Total</th><th>Focus</th></tr></thead>
+      <tbody>
+        <tr><td>Month 1</td><td>₹1,500</td><td>₹0 (barter)</td><td>₹1,500</td><td>First reviews laao</td></tr>
+        <tr><td>Month 2</td><td>₹2,000</td><td>₹500</td><td>₹2,500</td><td>Optimize campaigns</td></tr>
+        <tr><td>Month 3</td><td>₹3,000</td><td>₹1,000</td><td>₹4,000</td><td>Scale winners</td></tr>
+        <tr><td>Month 4+</td><td>Revenue se reinvest karo</td><td>₹2,000</td><td>Revenue ka 15%</td><td>Growth phase</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ===================== SECTION 11 ===================== -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">11</div>
+    <div class="section-title">Ahmedabad-Specific Resources — <span>Local Contacts</span></div>
+  </div>
+
+  <div class="box box-warn">
+    <div class="box-title">📍 Note: Ye sab Motera/Ahmedabad ke area-based suggestions hain — khud visit karke rates negotiate karo</div>
+  </div>
+
+  <h3>T-Shirt Manufacturers & Wholesale</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Area</th><th>What Milega</th><th>Avg Price</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Raipur Gate / Kaliawadi</strong></td><td>Wholesale readymade garments</td><td>₹150–350/piece</td><td>Bulk mein sasta</td></tr>
+        <tr><td><strong>Bapunagar</strong></td><td>T-shirt manufacturers</td><td>₹200–400/piece</td><td>Custom printing bhi</td></tr>
+        <tr><td><strong>Naroda GIDC</strong></td><td>Fabric + garment units</td><td>₹180–350/piece</td><td>Industrial area</td></tr>
+        <tr><td><strong>Sarkhej Road</strong></td><td>Export surplus T-shirts</td><td>₹250–500/piece</td><td>Premium quality</td></tr>
+        <tr><td><strong>Indiamart.com</strong></td><td>Pan-India suppliers</td><td>₹150–400/piece</td><td>Online order possible</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Printers & Labels</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Type</th><th>Area</th><th>Cost</th><th>What For</th></tr></thead>
+      <tbody>
+        <tr><td>Screen Printing</td><td>Bapunagar, Naroda</td><td>₹30–80/piece</td><td>T-shirt pe design print</td></tr>
+        <tr><td>DTF Printing</td><td>CG Road area</td><td>₹50–150/piece</td><td>Small batch, any design</td></tr>
+        <tr><td>Woven Labels</td><td>Raipur Gate market</td><td>₹8–15/piece</td><td>Inside neck label</td></tr>
+        <tr><td>Hang Tags</td><td>Local digital printer</td><td>₹3–6/piece</td><td>Price/brand tag</td></tr>
+        <tr><td>Packaging Print</td><td>Any digital press</td><td>₹1–3/piece</td><td>Thank you cards</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Logistics Partners</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Service</th><th>Best For</th><th>Ahmedabad Presence</th><th>Approx Rate</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Amazon Easy Ship</strong></td><td>Amazon orders</td><td>Pickup available</td><td>₹30–80/order</td></tr>
+        <tr><td><strong>Shiprocket</strong></td><td>Multi-platform shipping</td><td>Hub in Ahmedabad</td><td>₹45–90/500g</td></tr>
+        <tr><td><strong>Delhivery</strong></td><td>Flipkart + self</td><td>Multiple drop points</td><td>₹40–80/order</td></tr>
+        <tr><td><strong>BlueDart / DTDC</strong></td><td>Premium shipping</td><td>City-wide offices</td><td>₹80–150/order</td></tr>
+        <tr><td><strong>Ecom Express</strong></td><td>COD orders</td><td>Present in Ahmedabad</td><td>₹50–90/order</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Business Support Organizations</h3>
+  <div class="card-grid">
+    <div class="card">
+      <h4>🏛️ MSME Development Institute</h4>
+      <p>Naroda Road, Ahmedabad — Free training programs, subsidies, mentorship for small businesses</p>
+    </div>
+    <div class="card">
+      <h4>🏛️ NSIC (National Small Industries Corp)</h4>
+      <p>Free/subsidized exhibitions, marketing support, raw material procurement help</p>
+    </div>
+    <div class="card">
+      <h4>🏛️ Gujarat Chamber of Commerce</h4>
+      <p>Ashram Road — Networking, trade fairs, business registration guidance</td></p>
+    </div>
+    <div class="card">
+      <h4>🏛️ iCreate Ahmedabad</h4>
+      <p>Innovation center near Gandhinagar — startup support, mentorship, workshops</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== SECTION 12 ===================== -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">12</div>
+    <div class="section-title">Financial Planning — <span>Paise ka Hisaab</span></div>
+  </div>
+
+  <h3>Month 1–3 Financial Projection (Conservative, ₹30K Start)</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Month</th><th>Orders</th><th>Avg Selling Price</th><th>Revenue</th><th>Costs</th><th>Net Profit/Loss</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Month 1</td><td>5–10</td><td>₹699</td><td>₹3,500–7,000</td><td>₹6,000–7,000</td>
+          <td class="red">-₹1,000 to ₹0 (Setup costs)</td>
+        </tr>
+        <tr>
+          <td>Month 2</td><td>15–25</td><td>₹699</td><td>₹10,000–17,500</td><td>₹7,000–9,000</td>
+          <td style="color:#f5a623;">₹2,000–8,000 (Break even)</td>
+        </tr>
+        <tr>
+          <td>Month 3</td><td>30–50</td><td>₹749</td><td>₹22,500–37,500</td><td>₹10,000–15,000</td>
+          <td class="green">₹8,000–22,000 ✅</td>
+        </tr>
+        <tr style="background:#d4edda;">
+          <td><strong>Month 4–6</strong></td><td><strong>60–100+</strong></td><td><strong>₹799</strong></td><td><strong>₹50,000+</strong></td><td><strong>₹20,000</strong></td>
+          <td class="green"><strong>₹25,000–35,000 📈</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="box box-warn">
+    <div class="box-title">⚠️ Realistic Expectation</div>
+    Ye projections optimistic hain. Month 1–2 mein loss ya zero profit normal hai. <strong>Break even typically Month 2–3 mein hota hai.</strong> Sustainable profit Month 4–5 se start hoti hai agar consistently kaam karo.
+  </div>
+
+  <h3>GST Filing Requirements</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Return</th><th>Frequency</th><th>Due Date</th><th>What File Karna Hai</th></tr></thead>
+      <tbody>
+        <tr><td><strong>GSTR-1</strong></td><td>Monthly</td><td>11th of next month</td><td>Sales invoice details</td></tr>
+        <tr><td><strong>GSTR-3B</strong></td><td>Monthly</td><td>20th of next month</td><td>Summary: tax payable + ITC</td></tr>
+        <tr><td><strong>GSTR-9</strong></td><td>Annual</td><td>31st December</td><td>Annual return (if turnover > ₹2 Cr)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="box box-info">
+    <div class="box-title">💡 Tax Tips</div>
+    <ul>
+      <li>GST Input Tax Credit (ITC) milega — T-shirt khareedne ka GST offset kar sakte ho selling GST se</li>
+      <li>Income Tax: Personal slab rate (Sole Prop). ₹5L tak zero tax (rebate ke baad). New regime consider karo.</li>
+      <li>Accountant fee: ₹1,500–3,000/month (CA ya accountant — GST returns ke liye)</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===================== SECTION 13 ===================== -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">13</div>
+    <div class="section-title">90-Day Action Plan — <span>Week by Week Roadmap</span></div>
+  </div>
+
+  <!-- MONTH 1 -->
+  <h3>📅 Month 1: Foundation (Days 1–30)</h3>
+
+  <div class="week">
+    <div class="week-header">
+      <span class="wk">Week 1 (Days 1–7)</span>
+      <span class="wk-tag">BUSINESS SETUP</span>
+    </div>
+    <div class="week-body">
+      <ul>
+        <li>✅ Brand name finalize karo (3–5 options likh ke best chuno)</li>
+        <li>✅ PAN card check karo — agar nahi hai to apply karo (onlineservices.nsdl.com)</li>
+        <li>✅ GST Registration apply karo — gst.gov.in (documents ready rakho)</li>
+        <li>✅ Current bank account ke liye bank visit karo (HDFC/ICICI Zero Balance)</li>
+        <li>✅ UDYAM Registration karo — udyamregistration.gov.in (same day, free)</li>
+        <li>✅ Canva pe logo bana lo ya Fiverr pe order do (₹500)</li>
+        <li>✅ Instagram account create karo apne brand naam se</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="week">
+    <div class="week-header">
+      <span class="wk">Week 2 (Days 8–14)</span>
+      <span class="wk-tag">SOURCING & BRANDING</span>
+    </div>
+    <div class="week-body">
+      <ul>
+        <li>✅ GSTIN aane ka wait karo + current account activate karo</li>
+        <li>✅ Ahmedabad wholesale market visit karo — Raipur Gate / Bapunagar</li>
+        <li>✅ T-shirt samples lo (2–3 suppliers se quality compare karo)</li>
+        <li>✅ Woven label order do — brand naam wala (min 100 pcs, ₹1,000–1,500)</li>
+        <li>✅ Packaging material order do (poly bags, hang tags)</li>
+        <li>✅ T-shirt photography setup karo (white wall + daylight)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="week">
+    <div class="week-header">
+      <span class="wk">Week 3 (Days 15–21)</span>
+      <span class="wk-tag">MARKETPLACE SETUP</span>
+    </div>
+    <div class="week-body">
+      <ul>
+        <li>✅ Amazon Seller Central registration karo (GST + PAN + Bank ready ho)</li>
+        <li>✅ Flipkart Seller Hub registration karo</li>
+        <li>✅ 30–40 T-shirts bulk order do (initial inventory)</li>
+        <li>✅ Product photos shoot karo — white bg, flat lay, detail shots</li>
+        <li>✅ Size chart banao (Canva mein)</li>
+        <li>✅ Instagram pe 3–4 posts dalo (behind the scenes, brand story)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="week">
+    <div class="week-header">
+      <span class="wk">Week 4 (Days 22–30)</span>
+      <span class="wk-tag">LISTINGS & LAUNCH</span>
+    </div>
+    <div class="week-body">
+      <ul>
+        <li>✅ Amazon pe first listing create karo (optimized title + 5 bullets + description)</li>
+        <li>✅ Flipkart pe listings create karo</li>
+        <li>✅ Amazon Auto PPC campaign shuru karo (₹100/day budget)</li>
+        <li>✅ 5–10 nano influencers ko barter message bhejo</li>
+        <li>✅ Family/friends se first 2–3 orders aur reviews request karo (genuine buyers chahiye)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- MONTH 2 -->
+  <h3>📅 Month 2: First Sales (Days 31–60)</h3>
+
+  <div class="week">
+    <div class="week-header">
+      <span class="wk">Week 5–6 (Days 31–45)</span>
+      <span class="wk-tag">REVIEWS & OPTIMIZATION</span>
+    </div>
+    <div class="week-body">
+      <ul>
+        <li>✅ First orders fulfill karo — packing quality dhyan se karo</li>
+        <li>✅ Har order mein handwritten thank you note daalo — review ke liye request karo</li>
+        <li>✅ Amazon PPC data analyze karo — kaunse keywords work kar rahe hain</li>
+        <li>✅ Listings optimize karo based on search term reports</li>
+        <li>✅ GS1 barcode apply karo (ab zaruri ho raha hai)</li>
+        <li>✅ Instagram: daily posts/stories, engage with fashion accounts</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="week">
+    <div class="week-header">
+      <span class="wk">Week 7–8 (Days 46–60)</span>
+      <span class="wk-tag">SCALE UP</span>
+    </div>
+    <div class="week-body">
+      <ul>
+        <li>✅ 5+ reviews aane ke baad PPC budget badhao (₹150/day)</li>
+        <li>✅ Manual PPC campaigns add karo (top-performing keywords se)</li>
+        <li>✅ New color/design add karo based on what's selling</li>
+        <li>✅ Myntra ke liye application bharo (20+ SKUs ready rakhna)</li>
+        <li>✅ Inventory reorder karo</li>
+        <li>✅ Trademark file karo (agar budget hai — ₹4,500)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- MONTH 3 -->
+  <h3>📅 Month 3: Growth (Days 61–90)</h3>
+
+  <div class="week">
+    <div class="week-header">
+      <span class="wk">Week 9–13 (Days 61–90)</span>
+      <span class="wk-tag">SCALE & DIVERSIFY</span>
+    </div>
+    <div class="week-body">
+      <ul>
+        <li>✅ Amazon Brand Registry apply karo (agar trademark TM status mein hai)</li>
+        <li>✅ Flipkart pe inventory push karo</li>
+        <li>✅ Myntra approval aane pe catalog upload karo</li>
+        <li>✅ 2nd product line add karo (new design ya new color)</li>
+        <li>✅ Micro-influencer paid collaboration karo (₹1,000–2,000)</li>
+        <li>✅ Instagram Reels pe focus karo — outfit videos highest reach dete hain</li>
+        <li>✅ Monthly P&L banana shuru karo (Excel/Vyapar app)</li>
+        <li>✅ CA se 1 baar milna — tax planning ke liye</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== SECTION 14 ===================== -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">14</div>
+    <div class="section-title">Risk Analysis — <span>Galtiyon se Bacho</span></div>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Risk</th><th>Probability</th><th>Impact</th><th>Prevention</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Account Suspension</strong></td>
+          <td><span class="tag tag-orange">Medium</span></td>
+          <td><span class="tag tag-red">High</span></td>
+          <td>Marketplace policies follow karo — fake reviews mat lo, duplicate account mat banao, authentic products becho</td>
+        </tr>
+        <tr>
+          <td><strong>High Return Rate</strong></td>
+          <td><span class="tag tag-red">High</span></td>
+          <td><span class="tag tag-orange">Medium</span></td>
+          <td>Accurate size chart, clear photos, exact fabric description. Returns 10–15% expect karo</td>
+        </tr>
+        <tr>
+          <td><strong>Inventory Mismatch</strong></td>
+          <td><span class="tag tag-orange">Medium</span></td>
+          <td><span class="tag tag-orange">Medium</span></td>
+          <td>Roz inventory update karo. Oversell mat karo — order cancel hone pe seller metrics kharaab hote hain</td>
+        </tr>
+        <tr>
+          <td><strong>Cash Flow Problem</strong></td>
+          <td><span class="tag tag-orange">Medium</span></td>
+          <td><span class="tag tag-red">High</span></td>
+          <td>Payment 7–14 days baad aata hai — accordingly inventory invest karo. Emergency fund ₹5,000 rakhna</td>
+        </tr>
+        <tr>
+          <td><strong>Price War</strong></td>
+          <td><span class="tag tag-blue">Low</span></td>
+          <td><span class="tag tag-orange">Medium</span></td>
+          <td>Branding pe focus karo — "cheapest" mat bano, "best value" bano. Quality + presentation = premium positioning</td>
+        </tr>
+        <tr>
+          <td><strong>Quality Issues</strong></td>
+          <td><span class="tag tag-orange">Medium</span></td>
+          <td><span class="tag tag-red">High</span></td>
+          <td>Har batch incoming QC karo. Stitching, size consistency check karo before listing</td>
+        </tr>
+        <tr>
+          <td><strong>Ads Budget Waste</strong></td>
+          <td><span class="tag tag-red">High</span></td>
+          <td><span class="tag tag-orange">Medium</span></td>
+          <td>Small budget se start karo, data dekho, optimize karo. ACOS >60% ho to pause karo</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Top 10 Common Mistakes New Clothing Brands Make</h3>
+  <ul class="checklist">
+    <li>Reviews ke liye fake orders karna — account suspend ho sakta hai permanently</li>
+    <li>Images without white background — listing reject hoti hai</li>
+    <li>GST number bina selling — illegal + heavy penalty</li>
+    <li>Price bahut low rakhna — losses hoti hain, sustain karna mushkil</li>
+    <li>Sirf ek platform pe focus — diversify karo</li>
+    <li>Returns ignore karna — metrics kharaab hote hain</li>
+    <li>Inventory bahut zyada khareedna before first sale — pehle test karo</li>
+    <li>Ads band karna as soon as first orders aayein — consistency important hai</li>
+    <li>Poor packaging — first impression = last impression</li>
+    <li>Customer messages ignore karna — response time metric hai Amazon pe</li>
+  </ul>
+</div>
+
+<!-- ===================== SECTION 15 ===================== -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-num">15</div>
+    <div class="section-title">Renewals & Ongoing Costs — <span>Yearly Hisaab</span></div>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Service/Registration</th><th>One-Time Cost</th><th>Annual Renewal</th><th>Renewal Period</th><th>Type</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>GST Registration</td>
+          <td class="amt">₹0</td>
+          <td class="green">₹0</td>
+          <td>Lifetime (no renewal)</td>
+          <td><span class="mand">MANDATORY</span></td>
+        </tr>
+        <tr>
+          <td>PAN Card</td>
+          <td class="amt">₹107</td>
+          <td class="green">₹0</td>
+          <td>Lifetime</td>
+          <td><span class="mand">MANDATORY</span></td>
+        </tr>
+        <tr>
+          <td>UDYAM / MSME</td>
+          <td class="amt">₹0</td>
+          <td class="green">₹0</td>
+          <td>Lifetime</td>
+          <td><span class="opt">OPTIONAL</span></td>
+        </tr>
+        <tr>
+          <td>Trademark (Small Entity)</td>
+          <td class="amt">₹4,500</td>
+          <td>₹9,000</td>
+          <td>Every 10 years</td>
+          <td><span class="opt">OPTIONAL</span></td>
+        </tr>
+        <tr>
+          <td>GS1 Barcode (Basic)</td>
+          <td class="amt">₹5,000–8,000</td>
+          <td>₹5,000–8,000</td>
+          <td>Annual</td>
+          <td><span class="mand">NEEDED</span></td>
+        </tr>
+        <tr>
+          <td>Amazon Professional Plan</td>
+          <td class="amt">₹0</td>
+          <td>₹499/month = ₹5,988/yr</td>
+          <td>Monthly</td>
+          <td><span class="opt">OPTIONAL</span></td>
+        </tr>
+        <tr>
+          <td>GST Returns (CA/Accountant)</td>
+          <td class="amt">₹0</td>
+          <td>₹18,000–36,000</td>
+          <td>Monthly service</td>
+          <td><span class="mand">RECOMMENDED</span></td>
+        </tr>
+        <tr>
+          <td>Shop & Establishment Licence</td>
+          <td class="amt">₹500–2,000</td>
+          <td>₹500–1,000</td>
+          <td>Annual (Gujarat)</td>
+          <td><span class="opt">IF APPLICABLE</span></td>
+        </tr>
+        <tr>
+          <td>Domain Name (.com)</td>
+          <td class="amt">₹800–1,200</td>
+          <td>₹800–1,200</td>
+          <td>Annual</td>
+          <td><span class="opt">OPTIONAL</span></td>
+        </tr>
+        <tr>
+          <td>Instagram/Facebook Ads</td>
+          <td class="amt">—</td>
+          <td>Budget-based</td>
+          <td>Monthly</td>
+          <td><span class="opt">OPTIONAL</span></td>
+        </tr>
+        <tr style="background:#fef3c7;">
+          <td><strong>Estimated Annual Ongoing Cost</strong></td>
+          <td>—</td>
+          <td class="amt"><strong>₹30,000–60,000</strong></td>
+          <td>—</td>
+          <td>GST filing + basic tools</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- FINAL SUMMARY -->
+<div class="section" style="background: linear-gradient(135deg, #1a1a2e, #0f3460); color: white; border: none;">
+  <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+    <div style="font-size: 40px; margin-bottom: 16px;">🚀</div>
+    <h2 style="color: #f5a623; font-size: 26px; margin-bottom: 16px;">Final Summary: ₹30,000 Mein Kya Karna Hai?</h2>
+    <div style="text-align: left; background: rgba(255,255,255,0.08); border-radius: 12px; padding: 24px; margin: 16px 0;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+        <div>
+          <p style="color: #f5a623; font-weight: 700; margin-bottom: 10px;">✅ DAY 1–7 (Foundation)</p>
+          <ul style="font-size: 13.5px; padding-left: 18px; opacity: 0.9;">
+            <li>Brand name + Logo (₹500–1,000)</li>
+            <li>GST apply karo (₹0)</li>
+            <li>UDYAM register karo (₹0)</li>
+            <li>Current account open karo</li>
+          </ul>
+        </div>
+        <div>
+          <p style="color: #f5a623; font-weight: 700; margin-bottom: 10px;">✅ WEEK 2–3 (Setup)</p>
+          <ul style="font-size: 13.5px; padding-left: 18px; opacity: 0.9;">
+            <li>30–40 T-shirts kharido (₹15,000)</li>
+            <li>Labels + packaging (₹3,500)</li>
+            <li>Photos khicho (₹2,000)</li>
+            <li>Amazon + Flipkart register</li>
+          </ul>
+        </div>
+        <div>
+          <p style="color: #f5a623; font-weight: 700; margin-bottom: 10px;">✅ WEEK 4 (Launch)</p>
+          <ul style="font-size: 13.5px; padding-left: 18px; opacity: 0.9;">
+            <li>Listings live karo</li>
+            <li>PPC campaign start (₹2,000)</li>
+            <li>Influencer outreach (barter)</li>
+            <li>Instagram content start</li>
+          </ul>
+        </div>
+        <div>
+          <p style="color: #f5a623; font-weight: 700; margin-bottom: 10px;">📈 MONTH 2–3 (Scale)</p>
+          <ul style="font-size: 13.5px; padding-left: 18px; opacity: 0.9;">
+            <li>Reviews laao — optimize listings</li>
+            <li>Reorder inventory</li>
+            <li>Myntra apply karo</li>
+            <li>Revenue se reinvest karo</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p style="font-size: 15px; opacity: 0.85; margin-top: 16px;">Consistent rahoge to <strong style="color: #f5a623;">Month 3 mein ₹8,000–20,000 net profit</strong> possible hai.<br>Month 6 tak <strong style="color: #f5a623;">₹30,000–50,000/month</strong> ka target realistic hai.</p>
+    <p style="font-size: 13px; opacity: 0.6; margin-top: 12px;">Har raat 30 min — listings optimize karo, reviews respond karo, analytics dekho. Bas itna kaafi hai shuruat mein.</p>
+  </div>
+</div>
+
+<footer>
+  <p><strong>🛡️ Disclaimer:</strong> Ye guide 2025 ki publicly available information par based hai. Marketplace fees, GST rates, aur policies change ho sakti hain — latest updates ke liye official platforms check karo.</p>
+  <p style="margin-top: 8px;">Prepared for: <strong>Oversized T-Shirt Brand — Motera, Ahmedabad, Gujarat</strong> | Budget: <strong>₹30,000</strong></p>
+  <p style="margin-top: 6px; opacity: 0.5;">Platforms: Amazon India • Flipkart • Myntra | Version 1.0 | 2025</p>
+</footer>
+
+</body>
+</html>
